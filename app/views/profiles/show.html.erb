@@ -1,0 +1,115 @@
+<p style="color: green"><%= notice %></p>
+<div class="container">
+    <p>
+        <strong>Name:</strong>
+        <%=@profile.name %>
+    </p>
+
+    <p>
+        <strong>Image:</strong>
+        <image src= '<%=(url_for(@profile.avatar))%>'>
+    </p>
+
+    <p>
+        <strong>Job title:</strong>
+        <%=@profile.job_title %>
+    </p>
+
+    <p>
+        <strong>Exp:</strong>
+        <%=@profile.exp %>
+    </p>
+
+    <p>
+        <strong>Overview:</strong>
+        <%=@profile.overview %>
+    </p>
+
+    <p>
+        <strong>Highlights:</strong>
+        <%=@profile.highlights %>
+    </p>
+
+    <p>
+        <strong>Prim skill:</strong>
+        <%=@profile.prim_skill %>
+    </p>
+
+    <p>
+        <strong>Sec skill:</strong>
+        <%=@profile.sec_skill %>
+    </p>
+
+    <p>
+        <strong>Company name:</strong>
+        <%=@profile.company_name %>
+    </p>
+
+    <p>
+        <strong>Com position:</strong>
+        <%=@profile.com_position %>
+    </p>
+
+    <p>
+        <strong>To date:</strong>
+        <%=@profile.to_date %>
+    </p>
+
+    <p>
+        <strong>From date:</strong>
+        <%=@profile.from_date %>
+    </p>
+
+    <p>
+        <strong>Description:</strong>
+        <%=@profile.description %>
+    </p>
+
+    <p>
+        <strong>Project name:</strong>
+        <%=@profile.project_name %>
+    </p>
+
+    <p>
+        <strong>Project url:</strong>
+        <%=@profile.project_url %>
+    </p>
+
+    <p>
+        <strong>Tech stack:</strong>
+        <%=@profile.tech_stack %>
+    </p>
+
+    <p>
+        <strong>Project desc:</strong>
+        <%=@profile.project_desc %>
+    </p>
+
+    <p>
+        <strong>School string:</strong>
+        <%=@profile.school_string %>
+    </p>
+
+    <p>
+        <strong>Degree:</strong>
+        <%=@profile.degree %>
+    </p>
+
+    <p>
+        <strong>To date school:</strong>
+        <%=@profile.to_date_school %>
+    </p>
+
+    <p>
+        <strong>From date school:</strong>
+        <%=@profile.from_date_school %>
+    </p>
+
+    </div>
+
+<div>
+  <%= link_to "Edit this profile", edit_profile_path(@profile) %> |
+  <%= link_to "Back to profiles", profiles_path %>
+
+  <%= button_to "Destroy this profile", @profile, method: :delete %>
+</div>

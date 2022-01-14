@@ -1,0 +1,114 @@
+<%= form_with(model: profile) do |form| %>
+  <% if profile.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
+
+      <ul>
+        <% profile.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="container w-25">
+    <h2> Profile Details </h2>
+    <div>
+      <%= form.text_field :name,placeholder:'Name',class:'form-control' %>
+    </div>
+    <br>
+    <div>
+      <%= form.file_field :avatar,class:"form-control" %>
+    </div>
+    <br>
+    <div>
+      <%= form.text_field :job_title,placeholder:'Job Title',class:'form-control' %>
+    </div>
+    <br>
+    <div>
+      <%= form.text_field :exp,placeholder:'Experience',class:'form-control' %>
+    </div>
+    <br>
+    <div>
+      <%= form.text_field :overview,placeholder:'Overview',class:'form-control' %>
+    </div>
+    <br>
+    <div>
+      <%= form.text_field :highlights,placeholder:'Career Highlights',class:'form-control' %>
+    </div>
+    <br>
+    <div>
+      <%= form.text_field :prim_skill,placeholder:'Primary Skill',class:'form-control' %>
+    </div>
+    <br>
+    <div>
+      <%= form.text_field :sec_skill,placeholder:'Secondary Skill',class:'form-control' %>
+    </div>
+    <br>
+    <hr>
+
+    <h2> Experiences </h2>
+    <div>
+      <%= form.text_field :company_name,placeholder:'Company Name',class:'form-control' %>
+    </div>
+    <br>
+    <div>
+      <%= form.text_field :com_position,placeholder:'Position',class:'form-control' %>
+    </div>
+    <br>
+    <div>
+      <%= form.date_field :to_date,placeholder:'date',class:'form-control' %>
+    </div>
+    <br>
+    <div>
+      <%= form.date_field :from_date,placeholder:'date',class:'form-control' %>
+    </div>
+    <br>
+    <div>
+      <%= form.text_field :description,placeholder:'Description',class:'form-control' %>
+    </div>
+    <br>
+    <hr>
+
+    <h2> Projects </h2>
+    <div>
+      <%= form.text_field :project_name,placeholder:'Project Name',class:'form-control' %>
+    </div>
+    <br>
+    <div>
+      <%= form.text_field :project_url,placeholder:'Project URL',class:'form-control' %>
+    </div>
+    <br>
+    <div>
+      <%= form.text_field :tech_stack,placeholder:'Tech Stack',class:'form-control' %>
+    </div>
+    <br>
+    <div>
+      <%= form.text_field :project_desc,placeholder:'Project Description',class:'form-control' %>
+    </div>
+    <br>
+    <hr>
+
+    <h2> Education </h2>
+    <div>
+      <%= form.text_field :school_string,placeholder:'School',class:'form-control' %>
+    </div>
+    <br>
+    <div>
+      <%= form.text_field :degree,placeholder:'Degree',class:'form-control' %>
+    </div>
+    <br>
+    <div>
+      
+      <%= form.date_field :to_date_school,placeholder:'date',class:'form-control' %>
+    </div>
+    <br>
+    <div>
+      <%= form.date_field :from_date_school,placeholder:'date',class:'form-control' %>
+    </div>
+    <br>
+    <div class:'btn btn-light'>
+      <%= form.submit %>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Profiles</h1>
+
+<div id="profiles">
+  <% @profiles.each do |profile| %>
+    <%= render 'profile' %>
+    <p>
+      <%= link_to "Show this profile", profile,class:"btn btn-light" %>
+      <%= button_to "Delete this profile", profile, method: :delete ,class:"btn btn-light"%>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New profile", new_profile_path %>

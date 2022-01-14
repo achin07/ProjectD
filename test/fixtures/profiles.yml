@@ -1,0 +1,45 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  job_title: MyString
+  exp: MyString
+  overview: MyString
+  highlights: MyString
+  prim_skill: MyString
+  sec_skill: MyString
+  company_name: MyString
+  com_position: MyString
+  to_date: 2022-01-14
+  from_date: 2022-01-14
+  description: MyString
+  project_name: MyString
+  project_url: MyString
+  tech_stack: MyString
+  project_desc: MyString
+  school_string: MyString
+  degree: MyString
+  to_date_school: 2022-01-14
+  from_date_school: 2022-01-14
+
+two:
+  name: MyString
+  job_title: MyString
+  exp: MyString
+  overview: MyString
+  highlights: MyString
+  prim_skill: MyString
+  sec_skill: MyString
+  company_name: MyString
+  com_position: MyString
+  to_date: 2022-01-14
+  from_date: 2022-01-14
+  description: MyString
+  project_name: MyString
+  project_url: MyString
+  tech_stack: MyString
+  project_desc: MyString
+  school_string: MyString
+  degree: MyString
+  to_date_school: 2022-01-14
+  from_date_school: 2022-01-14
